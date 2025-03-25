@@ -41,7 +41,7 @@ utilidad_por_sucursal = ventas_por_sucursal - deudas_por_sucursal
 fig, ax = plt.subplots()
 ax.bar(deudas_por_sucursal.index, deudas_por_sucursal, label='Deudas Totales')
 ax.bar(utilidad_por_sucursal.index, utilidad_por_sucursal, bottom=deudas_por_sucursal, label='Utilidad')
-ax.set_title('Deudas Totales y Margen de Utilidad por Sucursal')
+ax.set_title('Deudas Totales y margen de Utilidad por Sucursal')
 ax.set_xlabel('Sucursal')
 ax.set_ylabel('Monto')
 ax.legend()
